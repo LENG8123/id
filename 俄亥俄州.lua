@@ -1,33 +1,3 @@
-local msg = Instance.new("Message",workspace)
-msg.Text = "欢迎使用冷脚本"
-wait(1.8)
-msg:Destroy()
-
-local msg = Instance.new("Message",workspace)
-msg.Text = "作者名字"
-wait(1.8)
-msg:Destroy()
-
-local msg = Instance.new("Message",workspace)
-msg.Text = "CN_BLPO"
-wait(1.8)
-msg:Destroy()
-
-local msg = Instance.new("Message",workspace)
-msg.Text = "冷脚本群号"
-wait(1.8)
-msg:Destroy()
-
-local msg = Instance.new("Message",workspace)
-msg.Text = "815883059"
-wait(1.8)
-msg:Destroy()
-
-local msg = Instance.new("Message",workspace)
-msg.Text = "祝你玩得开心，玩得愉快"
-wait(1.8)
-msg:Destroy()
-
 if getgenv().ED_AntiKick then
 	return
 end
@@ -37,21 +7,6 @@ getgenv().ED_AntiKick = {
 	SendNotifications = true, -- Set to true if you want to get notified for every event
 	CheckCaller = true -- Set to true if you want to disable kicking by other executed scripts
 }
-local dropdown = {}
-local playernamedied = ""
-
-for i, player in pairs(game.Players:GetPlayers()) do
-    dropdown[i] = player.Name
-end
-
-function Notify(top, text, ico, dur)
-  game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = top,
-    Text = text,
-    Icon = ico,
-    Duration = dur,
-  })
-end
 
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
